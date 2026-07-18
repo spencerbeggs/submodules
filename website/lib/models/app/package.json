@@ -1,0 +1,34 @@
+{
+	"name": "@submodules/cli",
+	"version": "0.0.0",
+	"private": false,
+	"description": "Core code for the effects package",
+	"homepage": "https://github.com/spencerbeggs/submodules/tree/main/packages/effects#readme",
+	"bugs": {
+		"url": "https://github.com/spencerbeggs/submodules/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/spencerbeggs/submodules.git",
+		"directory": "packages/effects"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "C. Spencer Beggs",
+		"email": "spencer@beggs.codes",
+		"url": "https://spencerbeg.gs"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"import": "./index.js",
+			"default": "./index.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"engines": {
+		"node": ">=24.11.0"
+	}
+}
