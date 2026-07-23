@@ -3,7 +3,7 @@
 	"changelog": [
 		"@savvy-web/changelog",
 		{
-			"repo": "spencerbeggs/pnpm-module-template"
+			"repo": "spencerbeggs/submodules"
 		}
 	],
 	"commit": false,
