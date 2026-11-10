@@ -22,10 +22,8 @@
 		".": "./src/index.ts"
 	},
 	"scripts": {
-		"build": "turbo run build:dev build:prod --log-order=grouped --log-prefix=none",
-		"build:dev": "node savvy.build.ts --target dev",
-		"build:prod": "node savvy.build.ts --target prod",
-		"ci:build": "CI=\"true\" turbo run build:dev build:prod --log-order=grouped --output-logs=full --log-prefix=none",
+		"build": "turbo run build --log-order=grouped --log-prefix=none",
+		"ci:build": "CI=\"true\" turbo run build --log-order=grouped --output-logs=full --log-prefix=none",
 		"ci:test": "CI=\"true\" vitest run --passWithNoTests",
 		"lint": "biome check --max-diagnostics=none",
 		"lint:fix": "biome check --write --max-diagnostics=none",
@@ -64,8 +62,6 @@
 	},
 	"publishConfig": {
 		"access": "public",
-		"directory": "dist/dev/pkg",
-		"linkDirectory": true,
 		"targets": {
 			"npm": true
 		}

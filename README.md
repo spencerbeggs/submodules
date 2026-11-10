@@ -9,9 +9,9 @@ You're welcome to clone or fork this template for your own use.
 
 ## What's Included
 
-- **Build pipeline** — Dual-output builds (development + production) via
-  [Rslib](https://rslib.rs/) with automatic `package.json` transformation for
-  publishing
+- **Build pipeline** — `effected package build` from
+  [@effected/plugin](https://github.com/spencerbeggs/effected), with automatic
+  `package.json` transformation for publishing
 - **Code quality** — [Biome](https://biomejs.dev/) for linting and formatting,
   with git hooks for pre-commit checks and commit message validation
 - **Testing** — [Vitest](https://vitest.dev/) with v8 coverage
@@ -39,7 +39,7 @@ You're welcome to clone or fork this template for your own use.
    ```bash
    pnpm run test:watch    # Run tests in watch mode
    pnpm run lint:fix      # Auto-fix lint issues
-   pnpm run build         # Build dev + prod outputs
+   pnpm run build         # Build every package with effected package build
    ```
 
 ## Project Structure
@@ -47,8 +47,7 @@ You're welcome to clone or fork this template for your own use.
 ```text
 src/               Source code and tests
 lib/configs/       Shared tool configurations (commitlint, lint-staged, markdownlint)
-dist/dev/          Development build output
-dist/npm/          Production build output (published to registries)
+dist/prod/         Build output: <group>/pkg (published), meta, issues.json
 .github/workflows/ CI/CD workflows
 .changeset/        Changeset configuration
 ```

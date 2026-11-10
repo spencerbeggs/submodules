@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"toolPackage": "@microsoft/api-extractor",
-		"toolVersion": "7.58.11",
+		"toolVersion": "7.60.1",
 		"schemaVersion": 1011,
 		"oldestForwardsCompatibleVersion": 1001,
 		"tsdocConfig": {
@@ -167,7 +167,7 @@
 	},
 	"kind": "Package",
 	"canonicalReference": "@submodules/effects!",
-	"docComment": "/**\n * \\@submodules/effects The package documentation\n *\n * @packageDocumentation\n */\n",
+	"docComment": "/**\n * \\@submodules/effects\n * The package documentation\n *\n * @packageDocumentation\n */\n",
 	"name": "@submodules/effects",
 	"preserveMemberOrder": false,
 	"members": [

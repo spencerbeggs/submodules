@@ -1,16 +1,16 @@
 {
-	"name": "@submodules/cli",
+	"name": "@submodules/mcp",
 	"version": "0.0.0",
 	"private": false,
-	"description": "Core code for the effects package",
-	"homepage": "https://github.com/spencerbeggs/submodules/tree/main/packages/effects#readme",
+	"description": "MCP server for fluently managing submodules for AI agents",
+	"homepage": "https://github.com/spencerbeggs/submodules/tree/main/packages/mcp/mcp#readme",
 	"bugs": {
 		"url": "https://github.com/spencerbeggs/submodules/issues"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/spencerbeggs/submodules.git",
-		"directory": "packages/effects"
+		"directory": "packages/mcp"
 	},
 	"license": "MIT",
 	"author": {
